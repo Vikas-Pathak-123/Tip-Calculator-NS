@@ -1,2 +1,2 @@
 # Tip-Calculator-NS
-Project work newton school
+## Project work newton school
