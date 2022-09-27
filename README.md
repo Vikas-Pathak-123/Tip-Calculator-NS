@@ -1,6 +1,6 @@
-# Tip-Calculator-NS
+# Tip-Calculator-NS || by VIKAS PATHAK
 ## Project work newton school
-calculatorSnap.jpeg
+
 Use this Application [Tip Calculator](https://vikas-pathak-123.github.io/Tip-Calculator-NS/) and give your feedback.
 
 ## Usage
