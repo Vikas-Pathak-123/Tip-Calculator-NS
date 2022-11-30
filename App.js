@@ -5,8 +5,8 @@ function calc(){
     let amt = document.getElementById("billamt").value;
     let pplAmt = document.getElementById("peopleamt").value;
    
-    if(amt==""){
-    alert("Please Enter Bill Amount");
+     if(amt==""|| amt<1){
+    alert("Please Enter valid Bill Amount");
     }
      function update() {
 				var select = document.getElementById('serviceQual');
