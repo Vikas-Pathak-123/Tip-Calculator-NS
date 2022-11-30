@@ -13,7 +13,10 @@ function calc(){
 				var option = select.options[select.selectedIndex];
 
 				select.value = option.value;
-                    if(pplAmt>1){
+	    	 if(pplAmt<1 ){
+                         alert("Please Enter valid Number");
+                    }
+                    else if(pplAmt>1){
                     let num = (select.value*amt)/pplAmt ;
                     let n = num.toFixed(2);
                     document.getElementById("tip").innerHTML=`TIP AMOUNT<br>${n} <br>Each`;
