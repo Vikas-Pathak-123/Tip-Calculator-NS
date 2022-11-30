@@ -5,18 +5,21 @@ function calc(){
     let amt = document.getElementById("billamt").value;
     let pplAmt = document.getElementById("peopleamt").value;
    
-     if(amt==""|| amt<1){
+    if(amt==""|| amt<1){
     alert("Please Enter valid Bill Amount");
     }
+    else if(pplAmt<1 ){
+          alert("Please Enter valid Number");
+      }else{
+           update();
+      }
      function update() {
 				var select = document.getElementById('serviceQual');
 				var option = select.options[select.selectedIndex];
 
 				select.value = option.value;
-	    	 if(pplAmt<1 ){
-                         alert("Please Enter valid Number");
-                    }
-                    else if(pplAmt>1){
+                   
+                    if(pplAmt>1){
                     let num = (select.value*amt)/pplAmt ;
                     let n = num.toFixed(2);
                     document.getElementById("tip").innerHTML=`TIP AMOUNT<br>${n} <br>Each`;
@@ -28,7 +31,7 @@ function calc(){
 				
 			}
 
-			update();
+			// update();
 
 }
 
